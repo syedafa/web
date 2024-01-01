@@ -1,5 +1,6 @@
-import axios from "axios";
+// import axios from "axios";
 import { createContext, useEffect, useState } from "react";
+import res from "../user.json";
 export const context = createContext();
 const AppContext = ({ children }) => {
   const [pokemon, setPokemon] = useState([]);
@@ -7,9 +8,10 @@ const AppContext = ({ children }) => {
   const [page, setPage] = useState(1);
 
   const getPokemon = async () => {
-    const res = await axios.get(`http://localhost:3000/users.json`);
+    // const res = await axios.get(`http://localhost:3000/users.json`);
     // console.log(res);
-    setPokemon(res.data);
+    // setPokemon(res.data);
+    setPokemon(res);
   };
   useEffect(() => {
     getPokemon();
