@@ -93,3 +93,20 @@
 .rst-game:hover {
   cursor: pointer;
 }
+.total-card {
+  /* position: fixed; */
+  /* top: 100px;
+  right: 10px; */
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 0px 5px;
+}
+.form {
+  width: fit-content;
+  margin: 100px auto;
+}
+.form p {
+  color: red;
+}
