@@ -63,6 +63,7 @@ const Battle = () => {
   const resetGame = () => {
     setNumberOfCards(null);
     setResetBoard(!resetBoard);
+    setPreviousCard(null);
   };
   const totalCardHandler = (e) => {
     e.preventDefault();
